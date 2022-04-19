@@ -6,7 +6,7 @@ import re
 
 token = config.client_token
 
-genius = Genius(token)
+genius = Genius(token, timeout=20)
 songs = genius.search_artist('David Bowie').songs
 
 text = ''
